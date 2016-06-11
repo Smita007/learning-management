@@ -10,6 +10,6 @@ class HelloController {
 
     }
     def signup(){
-
+        Map m = [firstName: "Smita", lastName: "Pallem", Email: "smita.palem7@gmail.com", Password: "dfdgnhhgg"]
     }
 }

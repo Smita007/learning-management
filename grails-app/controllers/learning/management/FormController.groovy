@@ -9,7 +9,8 @@ class FormController {
         println params.Email
         println params.password
 
-        redirect(controller: "form", action: "thankyou", params: [name: "you"])
+        return [firstName: params.firstName, lastName: params.lastName, Email: params.Email,
+                currentDate: new Date(), rating:23, age:20]
     }
 
     def thankyou() {
@@ -17,4 +18,5 @@ class FormController {
         println params
         render("""Thank You for sign-up.you have been signed-up now""")
     }
+
 }

@@ -10,3 +10,9 @@
     <input type="Password" name="password" placeholder="enter Password"><br><br>
     <input type="submit" value="submit">
 </form>
+<%--<
+First Name: ${firstName} <br>
+last Name: ${lastName} <br>
+Email: ${Email} <br>
+Password: ${password} <br>
+--%>
