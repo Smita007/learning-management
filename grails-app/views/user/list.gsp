@@ -20,15 +20,7 @@
 </head>
 
 <body>
-<nav class="navbar navbar-default">
-    <div class="navbar-nav">
-        <ul class="nav nav-tabs" role="tablist">
-            <li><a  href="/learning-management/user/create">create</a></li>
-            <li><a href="/learning-management/user/show">show</a></li>
-            <li><a href="/learning-management/user/list">list</a></li>
-        </ul>
-    </div>
-</nav>
+<g:render template="/template/mynavbar" model="[mycurrentpage:'List']"></g:render>
 <div class="container">
     <table border="1" width="100%">
         <tr>

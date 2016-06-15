@@ -14,15 +14,7 @@
     <asset:stylesheet src="bootstrap.min.js"/>
 </head>
 <body>
-<nav class="navbar navbar-default">
-    <div class="navbar-nav">
-        <ul class="nav nav-tabs" role="tablist">
-            <li><a  href="/learning-management/user/create">Create</a></li>
-            <li><a href="/learning-management/user/show">Show</a></li>
-            <li><a href="/learning-management/user/list">List</a></li>
-        </ul>
-    </div>
-</nav>
+<g:render template="/template/mynavbar" model="[mycurrentpage:'create']"></g:render>
 <div class="container">
     <h1>Registration form</h1><br>
     <form class="form-horizontal" action="/learning-management/User/save">
