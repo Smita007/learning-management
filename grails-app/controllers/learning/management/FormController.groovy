@@ -4,19 +4,18 @@ class FormController {
 
     def saveUser() {
         println("Parameters received")
-        println params.firstName
-        println params.lastName
-        println params.Email
-        println params.password
+//        println params.firstName
+//        println params.lastName
+//        println params.Email
+//        println params.password
 
-        return [firstName: params.firstName, lastName: params.lastName, Email: params.Email,
-                currentDate: new Date(), rating:23, age:20]
+        User myUser = new User(myFirstName:params.firstName,mylastName:params.lastName,
+                                myEmail:params.Email,myAge:params.age)
+
+        myUser.mytask()
+        return [recentlySavedUser: myUser]
+
     }
 
-    def thankyou() {
-        println "thank you action executed"
-        println params
-        render("""Thank You for sign-up.you have been signed-up now""")
-    }
 
 }

@@ -10,15 +10,13 @@
 <head>
     <title></title>
 </head>
-
 <body>
 Thank you for sign-up.
 Your details are as follows:
 
-First Name: ${firstName}<br>
-last Name: ${lastName}<br>
-Email: ${Email}<br>
-signed up at: ${currentDate}<br>
-age: ${age} <br>
+First Name: ${recentlySavedUser.myFirstName}<br>
+last Name: ${recentlySavedUser.mylastName}<br>
+Email: ${recentlySavedUser.myEmail}<br>
+age: ${recentlySavedUser.myAge} <br>
 </body>
 </html>
