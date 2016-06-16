@@ -8,13 +8,10 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
-    <title></title>
-    <asset:stylesheet href="bootstrap.min.css"/>
-    <asset:stylesheet src="jquery.min.js"/>
-    <asset:stylesheet src="bootstrap.min.js"/>
+    <title>show</title>
+    <meta name="layout" content="abc" />
 </head>
 <body>
-<g:render template="/template/mynavbar" model="[mycurrentpage:'show']"></g:render>
 <dl class="dl-horizontal">
     <dt>firstName:</dt><dd>${recentuser.myFirstName}</dd>
     <dt>lastName:</dt><dd> ${recentuser.myLastName}</dd>

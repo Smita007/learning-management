@@ -9,20 +9,12 @@
 <html>
 <head>
     <title>Example</title>
-    <asset:stylesheet href="bootstrap.min.css"/>
-    <asset:stylesheet src="jquery.min.js"/>
-    <asset:stylesheet src="bootstrap.min.js"/>
-
-    <style>
-
-
-    </style>
+    <meta name="layout" content="abc" />
 </head>
 
 <body>
-<g:render template="/template/mynavbar" model="[mycurrentpage:'List']"></g:render>
 <div class="container">
-    <table border="1" width="100%">
+    <table border="2" width="100%">
         <tr>
             <th>FirstName</th>
             <th>LastName</th>
