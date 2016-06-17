@@ -8,12 +8,20 @@
 </head>
 <body>
     <nav class="navbar navbar-inverse">
-            <h1 class="navbar-brand">Learning-management</h1>
-            <ul class="nav nav-tabs navbar-right" role="menubar">
-                <li class="${actionName=="create"?'active':''}"><a  href="/user/create">create</a></li>
-                <li class="${actionName=="show"?'active':''}"><a href="/user/show">show</a></li>
-                <li class="${actionName=="list"?'active':''}"><a href="/user/list">list</a></li>
-            </ul>
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">Learning-management</a>
+            </div>
+            <div class="container">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="${actionName=="create"?'active':''}"><a  href="/user/create">create</a></li>
+                    <li class="${actionName=="show"?'active':''}"><a href="/user/show">show</a></li>
+                    <li class="${actionName=="list"?'active':''}"><a href="/user/list">list</a></li>
+                </ul>
+            </div>
+
+        </div>
+
     </nav>
      <div class="container-fluid">
          <div class="page-header">

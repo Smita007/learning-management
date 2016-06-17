@@ -9,21 +9,17 @@ class UserController {
         Person myUser= new Person([firstName:params.firstName, lastName:params.lastName,
                                email:params.Email, Age:params.int('Age')])
         myUser.save()
-        session.lastSavedUser= myUser
-        if(session.allUsers == null) {
-            session.allUsers = []
-        }
-        session.allUsers.push(myUser)
 
-        redirect(action: "show")
+        redirect(action: "show", params: [id: myUser.id])
     }
     def show(){
-        return[recentuser: session.lastSavedUser]
+        Person myPerson=Person.get(params.id)
+        return[recentuser: myPerson]
 
     }
     def list(){
 
-        [allCreatedUser: session.allUsers]
+        [allCreatedUser: Person.list()]
 
     }
 }

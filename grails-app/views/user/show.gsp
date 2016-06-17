@@ -18,7 +18,7 @@
     <dt>Version</dt><dd>${recentuser.version}</dd>
     <dt>firstName:</dt><dd>${recentuser.firstName}</dd>
     <dt>lastName:</dt><dd> ${recentuser.lastName}</dd>
-    <dt>Email:</dt><dd> ${recentuser.email}</dd>
+    <dt>email:</dt><dd> ${recentuser.email}</dd>
     <dt>Age:</dt><dd> ${recentuser.Age}</dd>
 </dl>
 </content>
