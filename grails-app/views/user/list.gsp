@@ -13,7 +13,8 @@
 </head>
 
 <body>
-<div class="container">
+<content tag="list">
+<div class="row">
     <table border="2" width="100%">
         <tr>
             <th>FirstName</th>
@@ -22,14 +23,15 @@
             <th>Age</th>
         </tr>
         <g:each var="ls" in="${allCreatedUser}">
-            <tr class="${ls.myAge>100?'bg-danger': ''}">
-                <td>${ls.myFirstName}</td>
-                <td>${ls.myLastName}</td>
-                <td>${ls.myEmail}</td>
-                <td>${ls.myAge}</td>
+            <tr class="${ls.Age>100?'bg-danger': ''}">
+                <td>${ls.firstName}</td>
+                <td>${ls.lastName}</td>
+                <td>${ls.email}</td>
+                <td>${ls.Age}</td>
             </tr>
         </g:each>
     </table>
 </div>
+</content>
 </body>
 </html>

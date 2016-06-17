@@ -6,20 +6,64 @@
     <asset:stylesheet src="bootstrap.min.js"/>
     <g:layoutHead />
 </head>
-<body onload="${pageProperty(name:'body.onload')}">
-<div class="menu"><!--my common menu goes here--></menu>
-    <div class="body">
-        <nav class="navbar navbar-default">
-            <div class="navbar-inverse">
-                <ul class="nav nav-tabs" role="tablist">
-                    <li class="${mycurrentpage=="create"?'active':''}"><a  href="/learning-management/user/create">create</a></li>
-                    <li class="${mycurrentpage=="show"?'active':''}"><a href="/learning-management/user/show">show</a></li>
-                    <li class="${mycurrentpage=="List"?'active':''}"><a href="/learning-management/user/list">list</a></li>
-                </ul>
-            </div>
-        </nav>
-        <g:layoutBody />
+<body>
+    <nav class="navbar navbar-inverse">
+            <h1 class="navbar-brand">Learning-management</h1>
+            <ul class="nav nav-tabs navbar-right" role="menubar">
+                <li class="${actionName=="create"?'active':''}"><a  href="/user/create">create</a></li>
+                <li class="${actionName=="show"?'active':''}"><a href="/user/show">show</a></li>
+                <li class="${actionName=="list"?'active':''}"><a href="/user/list">list</a></li>
+            </ul>
+    </nav>
+     <div class="container-fluid">
+         <div class="page-header">
+             <h1>Sign-up form</h1>
+         </div>
     </div>
-</div>
+     <div class="container-fluid">
+         <div class="col-sm-10">
+             <div id="create">
+                     <g:pageProperty name="page.create" />
+             </div>
+             <div id="show">
+                     <g:pageProperty name="page.show" />
+             </div>
+             <div id="list">
+                     <g:pageProperty name="page.list" />
+             </div>
+         </div>
+         <div class="col-sm-2">
+             <ul>
+                 <li>Glyphicons</li>
+                 <li>Dropdowns</li>
+                 <li>Button groups</li>
+                 <li>Button dropdowns</li>
+                 <li>Single button dropdowns</li>
+                 <li>Split button dropdowns</li>
+                 <li>Sizing</li>
+                 <li>Dropup variation</li>
+                 <li>Input groups</li>
+                 <li>Navs</li>
+                 <li>Navbar</li>
+                 <li>Breadcrumbs</li>
+                 <li>Pagination</li>
+                 <li>Labels</li>
+                 <li>Badges</li>
+                 <li>Jumbotron</li>
+                 <li>Page header</li>
+                 <li>Thumbnails</li>
+                 <li>Alerts</li>
+                 <li>Progress bars</li>
+                 <li>Media object</li>
+                 <li>List group</li>
+                 <li>Panels</li>
+                 <li>Responsive embed</li>
+                 <li>Wells</li>
+                 <li>Back to top</li>
+                 <li>Preview theme</li>
+             </ul>
+         </div>
+     </div>
+    <g:layoutBody />
 </body>
 </html>

@@ -6,8 +6,9 @@ class UserController {
 
     }
     def save(){
-        User myUser= new User([myFirstName:params.firstName, myLastName:params.lastName,
-                               myEmail:params.Email, myAge:params.int('Age')])
+        Person myUser= new Person([firstName:params.firstName, lastName:params.lastName,
+                               email:params.Email, Age:params.int('Age')])
+        myUser.save()
         session.lastSavedUser= myUser
         if(session.allUsers == null) {
             session.allUsers = []

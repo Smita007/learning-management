@@ -12,11 +12,15 @@
     <meta name="layout" content="abc" />
 </head>
 <body>
+<content tag="show">
 <dl class="dl-horizontal">
-    <dt>firstName:</dt><dd>${recentuser.myFirstName}</dd>
-    <dt>lastName:</dt><dd> ${recentuser.myLastName}</dd>
-    <dt>Email:</dt><dd> ${recentuser.myEmail}</dd>
-    <dt>Age:</dt><dd> ${recentuser.myAge}</dd>
+    <dt>Id:</dt><dd>${recentuser.id}</dd>
+    <dt>Version</dt><dd>${recentuser.version}</dd>
+    <dt>firstName:</dt><dd>${recentuser.firstName}</dd>
+    <dt>lastName:</dt><dd> ${recentuser.lastName}</dd>
+    <dt>Email:</dt><dd> ${recentuser.email}</dd>
+    <dt>Age:</dt><dd> ${recentuser.Age}</dd>
 </dl>
+</content>
 </body>
 </html>
