@@ -39,6 +39,9 @@
              <div id="list">
                      <g:pageProperty name="page.list" />
              </div>
+             <div id="edit">
+                 <g:pageProperty name="page.edit" />
+             </div>
          </div>
          <div class="col-sm-2">
              <ul>

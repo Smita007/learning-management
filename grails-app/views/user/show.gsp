@@ -14,12 +14,17 @@
 <body>
 <content tag="show">
 <dl class="dl-horizontal">
+    <g:if test="${recentuser}">
     <dt>Id:</dt><dd>${recentuser.id}</dd>
     <dt>Version</dt><dd>${recentuser.version}</dd>
     <dt>firstName:</dt><dd>${recentuser.firstName}</dd>
     <dt>lastName:</dt><dd> ${recentuser.lastName}</dd>
     <dt>email:</dt><dd> ${recentuser.email}</dd>
     <dt>Age:</dt><dd> ${recentuser.Age}</dd>
+    </g:if>
+    <g:else>
+        oops!
+    </g:else>
 </dl>
 </content>
 </body>
