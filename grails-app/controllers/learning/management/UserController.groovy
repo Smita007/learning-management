@@ -53,6 +53,8 @@ class UserController {
 
     }
     def test(){
+        String s = params.name
+        List splitted= s.split(" ")
         List myPerson
         if(params.email && params.name && params.age) {
             myPerson = Person.findAllByEmailOrFirstNameOrLastNameOrAge("%${params.email}%", "${splitted[0]}",
@@ -74,8 +76,7 @@ class UserController {
             println "hello"
         }
         else if(params.name){
-            String s = params.name
-            List splitted= s.split(" ")
+
             if(splitted.size==2){
                 println splitted[0]
                 println splitted[1]
