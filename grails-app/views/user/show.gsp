@@ -20,7 +20,7 @@
     <dt>firstName:</dt><dd>${recentuser.firstName}</dd>
     <dt>lastName:</dt><dd> ${recentuser.lastName}</dd>
     <dt>email:</dt><dd> ${recentuser.email}</dd>
-    <dt>Age:</dt><dd> ${recentuser.Age}</dd>
+    <dt>Age:</dt><dd> ${recentuser.age}</dd>
     </g:if>
     <g:else>
         oops!

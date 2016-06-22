@@ -39,8 +39,8 @@
                    placeholder="enter Email">
         </div>
         <div class="form-group">
-            <label for="Age" class="col-md-2">Age</label>
-            <input type="text" name="Age" id="Age" value="${edit1.Age}" class="col-md-6" placeholder="enter Age">
+            <label for="age" class="col-md-2">Age</label>
+            <input type="text" name="age" id="age" value="${edit1.age}" class="col-md-6" placeholder="enter Age">
         </div>
         <button class="btn btn-primary col-md-offset-2 col-md-3" type="submit">submit</button><br>
     </form>

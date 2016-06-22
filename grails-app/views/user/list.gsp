@@ -26,14 +26,14 @@
             <th>Delete</th>
         </tr>
         <g:each var="ls" in="${allCreatedUser}">
-            <tr class="${ls.Age>100?'bg-danger': ''}">
+            <tr class="${ls.age>100?'bg-danger': ''}">
                 <td>
                     <a href="/user/show?id=${ls.id}">${ls.id}</a>
                 </td>
                 <td>${ls.firstName}</td>
                 <td>${ls.lastName}</td>
                 <td>${ls.email}</td>
-                <td>${ls.Age}</td>
+                <td>${ls.age}</td>
                 <td>
                     <a href="/user/edit?id=${ls.id}">Edit</a>
                 </td>

@@ -4,7 +4,11 @@ class Person {
     String firstName
     String lastName
     String email
-    int Age
+    int age
+
     static constraints = {
+        firstName(nullable: true)
+        email(email: true)
+        age(max: 200)
     }
 }

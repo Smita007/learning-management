@@ -42,6 +42,9 @@
              <div id="edit">
                  <g:pageProperty name="page.edit" />
              </div>
+             <div id="search">
+                 <g:pageProperty name="page.search" />
+             </div>
          </div>
          <div class="col-sm-2">
              <ul>
